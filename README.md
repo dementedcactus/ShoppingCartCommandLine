@@ -16,20 +16,20 @@
 
 You will create a command line application to simulate the experience of checking out at a supermarket, Pursuit Farms. The application will take multiple forms of information as input: payment method, item selection, and item quantity.
 
-Here are some example objects:
+Here are some objects you will need in your application:
 
 ```swift
 struct Cart {
-  var items: //some custom type that gives a way of structuring this data
-  func getTotalPrice() -> Double {
-    //implementation here
-  }
-  // Other methods below:
+  var items: [Item]
+  // Add methods below as needed
+}
+
+struct Item {
+  //Add the properties you need the item to have
 }
 
 enum PaymentType: Int {
-    case cash = 0
-    case credit = 1
+  //Add cases here
 }
 ```
 
