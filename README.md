@@ -86,7 +86,6 @@ Allow the user to check out by entering "-1". Display to them the total cost of 
 |Handle Input|Application handles correct and incorrect input in an intuitive way and without crashing|
 |Payment Method| Application takes the user's payment method and stores that information in an object|
 |Shopping Cart|Application creates the user's cart, with item selections and quantities of those items|
-|Unlisted Items|Application allows user to add an unlisted item and randomly assigns a price to it|
 |Checkout|Application tells user the total cost of their shopping cart, and applies and informs of discount|
 |Objects|Functionality is encapsulated in instances of objects|
 |Proper Scope|Functionality is not in the global scope|
