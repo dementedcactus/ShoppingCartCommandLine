@@ -91,7 +91,6 @@ Allow the user to check out by entering "-1". Display to them the total cost of 
 |Objects|Functionality is encapsulated in instances of objects|
 |Proper Scope|Functionality is not in the global scope|
 |General Coding Logic|Setup and logic are easy to follow and make sense|
-Collapse
 
 
 ## 6. Bonuses:
