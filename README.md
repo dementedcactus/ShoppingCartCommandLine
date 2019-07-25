@@ -1,6 +1,8 @@
 # Unit 1 Assessment
 ---
 
+![Gif](https://github.com/joinpursuit/ios-unit-1-open-book-assessment/blob/master/shopping_cart_command_line_app.gif)
+
 ### Objective
 - To use a command line application to create an interactive experience
 - To use your full set of skills and tools from Unit 1 to build an application
