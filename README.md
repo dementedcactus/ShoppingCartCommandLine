@@ -1,4 +1,4 @@
-# Unit 1 Assessment
+# Unit 1 Assessment: Pursuit Farms
 ---
 
 ![Gif](https://github.com/joinpursuit/ios-unit-1-open-book-assessment/blob/master/shopping_cart_command_line_app.gif)
