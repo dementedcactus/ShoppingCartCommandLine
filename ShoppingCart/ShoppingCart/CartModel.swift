@@ -18,29 +18,39 @@ class Cart {
     var items: [Item] = []
     
     // Class Methods
-    func addApples() {
+    func addApples(howManyToAdd:Int) {
         let apples = Item(name: "Apples", price: 1.99)
-        items.append(apples)
+        for _ in 0...howManyToAdd {
+            items.append(apples)
+        }
     }
     
-    func addBananas() {
+    func addBananas(howManyToAdd:Int) {
         let bananas = Item(name: "Bananas", price: 1.31)
+        for _ in 0...howManyToAdd {
         items.append(bananas)
+        }
     }
     
-    func addCantaloupe() {
+    func addCantaloupe(howManyToAdd:Int) {
         let cantaloupe = Item(name: "Cantaloupe", price: 3.60)
+        for _ in 0...howManyToAdd {
         items.append(cantaloupe)
+        }
     }
     
-    func addDogFood() {
+    func addDogFood(howManyToAdd:Int) {
         let dogfood = Item(name: "Dog Food", price: 12.55)
+        for _ in 0...howManyToAdd {
         items.append(dogfood)
+        }
     }
     
-    func addEggs() {
+    func addEggs(howManyToAdd:Int) {
         let eggs = Item(name: "Eggs", price: 5.69)
+        for _ in 0...howManyToAdd {
         items.append(eggs)
+        }
     }
     
     func viewCart() -> String {

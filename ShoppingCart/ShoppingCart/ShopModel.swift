@@ -43,33 +43,40 @@ class Shop{
         case -2:
             print(cart.viewCart())
         case -1:
-            print("Checked out your cart")
-            print("")
-            // Total all items and Multiply by paymentTypeMultiplier
-            let finalPrice = cart.cashOut() * paymentTypeMultiplier
-            print("Your final price is \(finalPrice.roundTo(places: 2))!")
-            // Break Loop
-            shoppingAddiction = false
+            if cart.items.isEmpty {
+                print("There are no items in your cart to checkout")
+                print("")
+            } else {
+                print("Checked out your cart")
+                print("")
+                // Total all items and add discount
+                let finalPrice = cart.cashOut() * paymentTypeMultiplier
+                let savings = cart.cashOut() - finalPrice
+                print("Your final price is $\(finalPrice.roundTo(places: 2))!")
+                print("You saved $\(savings.roundTo(places: 2))!")
+                // Break Loop
+                shoppingAddiction = false
+            }
         case 1:
+            cart.addApples(howManyToAdd: getHowManyInt())
             print("Added Apples to your cart")
             print("")
-            cart.addApples()
         case 2:
+            cart.addBananas(howManyToAdd: getHowManyInt())
             print("Added Bananas to your cart")
             print("")
-            cart.addBananas()
         case 3:
+            cart.addCantaloupe(howManyToAdd: getHowManyInt())
             print("Added Cantaloupe to your cart")
             print("")
-            cart.addCantaloupe()
         case 4:
+            cart.addDogFood(howManyToAdd: getHowManyInt())
             print("Added Dog Food to your cart")
             print("")
-            cart.addDogFood()
         case 5:
+            cart.addEggs(howManyToAdd: getHowManyInt())
             print("Added Eggs to your cart")
             print("")
-            cart.addEggs()
         default:
             print("Please enter a number from the list")
             print("") 
@@ -78,6 +85,17 @@ class Shop{
     
     private func getIntFromUser() -> Int {
         print("Enter your number here: ", terminator: "")
+        while true {
+            let input = readLine()
+            if let input = input,
+                let userNum = Int(input) {
+                return userNum
+            }
+        }
+    }
+    
+    private func getHowManyInt() -> Int {
+        print("How Many: ", terminator: "")
         while true {
             let input = readLine()
             if let input = input,
