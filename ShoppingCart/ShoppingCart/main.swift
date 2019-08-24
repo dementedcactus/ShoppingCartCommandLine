@@ -16,7 +16,7 @@ Please select your item:
 4) Dog Food ($12.55)
 5) Eggs ($5.69)
 
-Enter '-1' to Checkout
+Enter '-1' to Checkout or '-2' to view your Cart
 """
 
 let paymentString = """
@@ -25,19 +25,15 @@ Please select your form of payment:
 2) Credit
 """
 
-
-enum PaymentType: Int {
-    //Add cases here
-    case cash = 1
-    case credit = 2
-}
-var paymentTypeMultiplier: Double = 1.00
-
-print("Welcome to the Amazom!")
+print("Welcome to the Amazom! Subsidiary of Gooble!")
 print("What form of payment will you be using?")
+print("")
+print(paymentString)
 let shop = Shop()
 shop.cashOrCredit()
 
 print(menuString)
-shop.goShopping()
+while shop.shoppingAddiction {
+    shop.goShopping()
+}
 

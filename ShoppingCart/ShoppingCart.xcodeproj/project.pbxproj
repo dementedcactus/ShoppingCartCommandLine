@@ -10,6 +10,7 @@
 		DBC862E123107E4800C0FD1A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC862E023107E4800C0FD1A /* main.swift */; };
 		DBC862E82310975500C0FD1A /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC862E72310975500C0FD1A /* ShopModel.swift */; };
 		DBC862EA23109A5900C0FD1A /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC862E923109A5900C0FD1A /* CartModel.swift */; };
+		DBC862EC2310CA7100C0FD1A /* RoundingDoubles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC862EB2310CA7100C0FD1A /* RoundingDoubles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		DBC862E023107E4800C0FD1A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DBC862E72310975500C0FD1A /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		DBC862E923109A5900C0FD1A /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
+		DBC862EB2310CA7100C0FD1A /* RoundingDoubles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundingDoubles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				DBC862E023107E4800C0FD1A /* main.swift */,
 				DBC862E72310975500C0FD1A /* ShopModel.swift */,
 				DBC862E923109A5900C0FD1A /* CartModel.swift */,
+				DBC862EB2310CA7100C0FD1A /* RoundingDoubles.swift */,
 			);
 			path = ShoppingCart;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC862EC2310CA7100C0FD1A /* RoundingDoubles.swift in Sources */,
 				DBC862EA23109A5900C0FD1A /* CartModel.swift in Sources */,
 				DBC862E123107E4800C0FD1A /* main.swift in Sources */,
 				DBC862E82310975500C0FD1A /* ShopModel.swift in Sources */,

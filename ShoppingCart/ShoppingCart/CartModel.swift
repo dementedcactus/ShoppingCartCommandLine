@@ -8,14 +8,16 @@
 
 import Foundation
 struct Item {
-    //Add the properties you need the item to have
+    // Struct Properties
     var name: String
     var price: Double
 }
 
 class Cart {
+    // Class Properties
     var items: [Item] = []
-
+    
+    // Class Methods
     func addApples() {
         let apples = Item(name: "Apples", price: 1.99)
         items.append(apples)
@@ -41,10 +43,27 @@ class Cart {
         items.append(eggs)
     }
     
-    func viewCart() {
-        for products in items {
-            print(products.name)
+    func viewCart() -> String {
+        if items.isEmpty {
+            return "Your cart is empty"
         }
+        var cartString = ""
+        for products in items {
+            cartString.append("\(products.name) \n")
+        }
+        return cartString
+    }
+    
+    func cashOut() -> Double {
+        var total = Double()
+        if items.isEmpty {
+            total = 0.0
+        }
+        for products in items {
+            total += products.price
+        }
+        
+        return total
     }
 }
 
